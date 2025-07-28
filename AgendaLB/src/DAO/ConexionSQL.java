@@ -25,7 +25,7 @@ public class ConexionSQL {
  ResultSet rs = stmt.executeQuery("SELECT * FROM Usuarios");
  // Mostrar datos de la tabla
  while (rs.next()) {
- System.out.println("ID: " + rs.getInt("id") + ", Nombre: " + rs.getString("nombre"));
+ System.out.println("ID: " + rs.getInt("id") + ", Nombre: " + rs.getString("nombre")+", Fecha: " + rs.getString("Fecha"));
  }
  // Cerrar conexión, consulta y estado
  rs.close();
