@@ -4,6 +4,8 @@
  */
 package agendalb;
 
+import UI.AgendaApp;
+
 /**
  *
  * @author danir
@@ -16,6 +18,7 @@ public class AgendaLB {
     public static void main(String[] args) {
         // TODO code application logic here
         //parangacutirimicuaro
+          java.awt.EventQueue.invokeLater(() -> new AgendaApp().setVisible(true));
     }
     
 }
